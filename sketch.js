@@ -6,6 +6,8 @@ function setup() {
 	gmainColor = color(100, 100, 200);
 	gsecondColor = color(237,230,204);
 	bmainColor = color (249,237,228);
+	whiteColor = color (255,255,255)
+
 console.log(color);
 }
 
@@ -34,7 +36,7 @@ function draw() {
 	rect(260,210,50,200);
 
 	//neck for shirt
-	fill(255,255,255);
+	fill(whiteColor);
 	ellipse(200,180,85,100);
 	//shirt
 	rect(124,200,160,170);
@@ -71,7 +73,7 @@ function draw() {
 	//no stroke for anything
 	noStroke (0,0,0);
 	//fill for eyes
-	fill(255,255,255);
+	fill(whiteColor);
 	//rotating white part of eyes
 	translate(width/2.20,height/3.6);
 	rotate(PI/1.27);
@@ -132,15 +134,33 @@ function draw() {
 	arc(228,35,26,20,0,PI);
 
 	//starting on guy
+	//fill for ears
+	fill(229,209,183);
+	ellipse(-175,295,70,50);
+	ellipse(-84,286,70,50);
+
 	//fill for the face
 	fill(bmainColor);
 	// draw the face
 	var diameter = (150, 150);
 	ellipse(-130, 290, diameter-15, diameter);
 
+
+
 	//fill for eyes
-	fill (255,255,255);
-	ellipse (-100,305,diameter-120,diameter-115);
+	fill (whiteColor);
+	ellipse (-95,307,diameter-120,diameter-115);
+	ellipse (-156,312,diameter-120,diameter-115);
+	//pupils
+	fill(0,0,0)
+	ellipse(-95,300,diameter-135,diameter-130);
+	ellipse(-156,305,diameter-135, diameter-130);
+	//iris
+	fill(whiteColor)
+	ellipse(-95,297,diameter-146,diameter-140);
+	ellipse(-156,301,diameter-146, diameter-140);
+
+
 
 
 
