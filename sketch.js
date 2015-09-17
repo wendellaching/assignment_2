@@ -7,12 +7,7 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(204,229,255);
-
-	// set a fill color
-	fill(255, 255, 204);
-	//sun
-	ellipse(50,50,50,50);
+	background(0,51,102);
 
 	//fill for hair
 	fill(70,62,56);
@@ -21,13 +16,24 @@ function draw() {
 	//shading for back hair
 	fill(40,35,31);
 	//back hair
-ellipse(200,155,150,150);
+	ellipse(200,155,150,150);
 
 	//fill for ears
 	fill(237,230,204);
 	//left ear and right ear
 	ellipse(145,120,70,50);
 	ellipse(257,120,70,50);
+
+	//neck for shirt
+	fill(255,255,255);
+	ellipse(200,180,85,100);
+	//shirt
+	rect(124,200,160,150);
+	//shoulders
+	ellipse(120,224,50,50);
+	ellipse(290,224,50,50);
+	rect(90,230,80,20);
+	rect(240,230,80,20);
 
 	//fill for the face
 	fill(245,241,222);
@@ -99,7 +105,6 @@ ellipse(200,155,150,150);
 	translate(width/6.65,height/1.02);
 	rotate(PI/-1.15);
 	arc(88,165,25,12,0,PI);
-
 
 
 
