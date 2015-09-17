@@ -218,6 +218,12 @@ function draw() {
 	rotate(PI/-10);
 	ellipse(-287,-160,diameter-120, diameter-135);
 
+	//moon
+	fill(254,252,215);
+	ellipse(-20,270,55,55);
+	fill(0,51,102);
+	ellipse(-30,270,55,55);
+
 
 
 
