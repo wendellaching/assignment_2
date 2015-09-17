@@ -136,7 +136,12 @@ function draw() {
 	fill(bmainColor);
 	// draw the face
 	var diameter = (150, 150);
-	ellipse(-30, 275, diameter-15, diameter);
+	ellipse(-130, 290, diameter-15, diameter);
+
+	//fill for eyes
+	fill (255,255,255);
+	ellipse (-100,305,diameter-120,diameter-115);
+
 
 
 
