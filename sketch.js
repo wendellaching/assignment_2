@@ -6,7 +6,8 @@ function setup() {
 	gmainColor = color(100, 100, 200);
 	gsecondColor = color(237,230,204);
 	bmainColor = color (249,237,228);
-	whiteColor = color (255,255,255)
+	bsecondColor = color (229,209,183);
+	whiteColor = color (255,255,255);
 
 console.log(color);
 }
@@ -134,7 +135,7 @@ function draw() {
 
 	//starting on guy
 	//fill for ears
-	fill(229,209,183);
+	fill(bsecondColor);
 	ellipse(-175,295,70,50);
 	ellipse(-84,286,70,50);
 	//fill for the face
@@ -143,7 +144,7 @@ function draw() {
 	var diameter = (150, 150);
 	ellipse(-130, 290, diameter-15, diameter);
 	//nose
-	fill(229,209,183);
+	fill(bsecondColor);
 	ellipse(-125,273,16,16);
 	ellipse(-140,273,16,16);
 	//nostrils
@@ -180,6 +181,26 @@ function draw() {
 	translate(width/4, height/1.85);
 	rotate(PI/3);
 	arc(-180,180,150,100,0,PI);
+
+	//guy's neck
+	fill(bsecondColor);
+	translate(width/100, height/400);
+	rotate(PI/-10);
+	arc(-225,-30,80,80,0,PI);
+
+	//guy's shirt
+	fill(38,34,98)
+	rect(-300,-200,160,200);
+	ellipse(-145,-25,55,55);
+	ellipse(-300,-25,55,55);
+	rect(-145,-50,40,20);
+	rect(-340,-50,40,20);
+
+
+
+
+
+
 
 
 
