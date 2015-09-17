@@ -17,12 +17,11 @@ function draw() {
 	//fill for hair
 	fill(70,62,56);
 	//full hair
-	rect(125,135,150,125);
+	rect(125,135,150,110);
 	//shading for back hair
 	fill(40,35,31);
 	//back hair
 ellipse(200,155,150,150);
-
 
 	//fill for ears
 	fill(237,230,204);
@@ -36,9 +35,9 @@ ellipse(200,155,150,150);
 	var diameter = random(150, 150);
 	ellipse(200, 125, diameter-10, diameter);
 
-	//fill for hair
+	//fill for top hair
 	fill(70,62,56);
-	//rotate hair
+	//rotate top hair
 	translate(width/1.90,height/3.6);
 	rotate(PI/-1.2);
 	arc(100,-50,100,90,0,PI);
@@ -53,4 +52,29 @@ ellipse(200,155,150,150);
 	translate(width/4.74,height/3.67);
 	rotate(PI/-1.7);
 	line(165,50,125,.5);
+
+	//no stroke for anything
+	noStroke (0,0,0);
+	//fill for eyes
+	fill(255,255,255);
+	//rotating white part of eyes
+	translate(width/2.20,height/3.6);
+	rotate(PI/1.27);
+	ellipse (100,100,diameter-120,diameter-115);
+	translate(width/4.2,height/1.8);
+	rotate(PI/1);
+	ellipse (125,100,diameter-120,diameter-115);
+
+	//fill for eye pupil
+	fill(0,0,0);
+	//eye pupil
+	ellipse(53.5,108,diameter-135,diameter-130);
+	ellipse(125,108,diameter-135, diameter-130);
+	//fill for eye iris
+	fill(255,255,255);
+	//eye iris
+	ellipse(54,113,diameter-146,diameter-140);
+	ellipse(125,113,diameter-146, diameter-140);
+
+
 }
