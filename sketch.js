@@ -119,7 +119,7 @@ function draw() {
 
 	var diameter = random(150, 150);
 	//fill heart
-	fill(random(255),random(255),random(255));
+	fill(random(255),random(0),random(0));
 	ellipse(25,110,diameter-110,diameter-125);
 	ellipse(15,120,diameter-125,diameter-110);
 
@@ -188,6 +188,16 @@ function draw() {
 	rotate(PI/-10);
 	arc(-225,-30,80,80,0,PI);
 
+	//arms
+	fill(bmainColor);
+	rect(-145,-200,30,150);
+	rect(-330,-200,30,150);
+
+	//shade for arms
+	fill(bsecondColor)
+	rect(-145,-150,30,6);
+	rect(-330,-150,30,6);
+
 	//guy's shirt
 	fill(38,34,98)
 	rect(-300,-200,160,200);
@@ -195,6 +205,21 @@ function draw() {
 	ellipse(-300,-25,55,55);
 	rect(-145,-50,40,20);
 	rect(-340,-50,40,20);
+
+	//guy's heart
+	var diameter = random(150, 150);
+	//fill heart
+	fill(random(0),random(0),random(255));
+	translate(width/17, height/-8);
+	rotate(PI/-10);
+	ellipse(-270,-100,diameter-125,diameter-110);
+
+	translate(width/17, height/-8);
+	rotate(PI/-10);
+	ellipse(-287,-160,diameter-110, diameter-125);
+
+
+
 
 
 
