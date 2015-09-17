@@ -22,24 +22,7 @@ function draw() {
 	} else {
 			//black background
 			background (0,0,0);
-	}
-
-	var partMoon = random(1);
-	//draw moon
-	if (partMoon < .25) {
-			//navy moon background
-			fill(0,51,102);
-			ellipse(-30,270,55,55)
-
-	} else {
-			//black moon background
-			fill(0,0,0);
-			ellipse(-30,270,55,55)
-
-
-
-	}
-
+}
 
 	//fill for hair
 	fill(70,62,56);
@@ -243,16 +226,29 @@ function draw() {
 	rotate(PI/-10);
 	ellipse(-287,-160,diameter-120, diameter-135);
 
-	//moon
 	fill(254,252,215);
 	ellipse(-20,270,55,55);
 	fill(0,51,102);
 	ellipse(-30,270,55,55);
 
+	var partMoon = random(1);
+		//draw moon background
+	if (partMoon < .25) {
+			//navy moon background
+			fill(0,51,102);
+			ellipse(-30,270,55,55);
+
+	} else {
+			//black moon background
+
+			fill(0,0,0);
+			ellipse(-30,270,55,55);
+	noStroke();
+	}
+noLoop();
 	//stars
 	fill(255,255,0);
-	starSize = random(2, 5);
-	triangle(30,75,58,20,86);
+	triangle(100,75,58,20,86);
 
 
 
