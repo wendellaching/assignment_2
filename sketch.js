@@ -212,11 +212,11 @@ function draw() {
 	fill(random(0),random(0),random(255));
 	translate(width/17, height/-8);
 	rotate(PI/-10);
-	ellipse(-270,-100,diameter-125,diameter-110);
+	ellipse(-270,-100,diameter-135,diameter-120);
 
 	translate(width/17, height/-8);
 	rotate(PI/-10);
-	ellipse(-287,-160,diameter-110, diameter-125);
+	ellipse(-287,-160,diameter-120, diameter-135);
 
 
 
