@@ -164,6 +164,16 @@ function draw() {
 	ellipse(-95,297,diameter-146,diameter-140);
 	ellipse(-156,301,diameter-146, diameter-140);
 
+	//mouth
+	fill(140,0,3);
+	translate(width/12,height/1.25);
+	rotate(PI/1.15);
+	arc(160,115,50,40,0,PI);
+	//tongue
+	fill(244,113,113);
+	translate(width/4, height/1.85);
+	rotate(PI/1.15);
+	arc(-30,55,25,12,0,PI);
 
 
 
