@@ -76,5 +76,17 @@ ellipse(200,155,150,150);
 	ellipse(54,113,diameter-146,diameter-140);
 	ellipse(125,113,diameter-146, diameter-140);
 
+	//fill for nose
+	fill(237,230,204);
+	//nose
+	rect(80,90,15,50);
+	ellipse(80,130,16,16);
+ 	ellipse(95,130,16,16);
+	//fill for nostrils
+	fill(0,0,0);
+	//nostrils shape
+	ellipse (80,135,5,5);
+	ellipse (95,135,5,5);
+
 
 }
