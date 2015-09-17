@@ -7,12 +7,23 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(50, 50, 50);
+	background(204,229,255);
 
 	// set a fill color
-	fill(255, 255, 255);
+	fill(255, 255, 204);
+	//sun
+	ellipse(50,50,50,50);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	//fill for ears
+	fill(237,230,204);
+	//left ear and right ear
+	ellipse(145,120,70,50);
+	ellipse(257,120,70,50);
+
+
+	//fill for the face
+	fill(245,241,222);
+	// draw the face
+	var diameter = random(150, 150);
+	ellipse(200, 125, diameter-10, diameter);
 }
