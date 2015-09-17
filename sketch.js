@@ -88,5 +88,20 @@ ellipse(200,155,150,150);
 	ellipse (80,135,5,5);
 	ellipse (95,135,5,5);
 
+	//fill for mouth
+	fill(140,0,3);
+	//mouth
+	arc(88,150,50,40,0,PI);
+
+	//fill for tongue
+	fill(244,113,113);
+	//rotate tongue
+	translate(width/6.65,height/1.02);
+	rotate(PI/-1.15);
+	arc(88,165,25,12,0,PI);
+
+
+
+
 
 }
