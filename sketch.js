@@ -96,7 +96,6 @@ function draw() {
 	//fill for nose
 	fill(gsecondColor);
 	//nose
-	rect(80,90,15,50);
 	ellipse(80,130,16,16);
  	ellipse(95,130,16,16);
 	//fill for nostrils
@@ -138,14 +137,19 @@ function draw() {
 	fill(229,209,183);
 	ellipse(-175,295,70,50);
 	ellipse(-84,286,70,50);
-
 	//fill for the face
 	fill(bmainColor);
 	// draw the face
 	var diameter = (150, 150);
 	ellipse(-130, 290, diameter-15, diameter);
-
-
+	//nose
+	fill(229,209,183);
+	ellipse(-125,273,16,16);
+	ellipse(-140,273,16,16);
+	//nostrils
+	fill(0,0,0);
+	ellipse (-125,268,5,5);
+	ellipse (-140,268,5,5);
 
 	//fill for eyes
 	fill (whiteColor);
