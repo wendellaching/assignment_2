@@ -24,11 +24,16 @@ function draw() {
 	ellipse(145,120,70,50);
 	ellipse(257,120,70,50);
 
+	//arms
+	fill(245,241,222);
+	rect(100,210,50,200);
+	rect(260,210,50,200);
+
 	//neck for shirt
 	fill(255,255,255);
 	ellipse(200,180,85,100);
 	//shirt
-	rect(124,200,160,150);
+	rect(124,200,160,170);
 	//shoulders
 	ellipse(120,224,50,50);
 	ellipse(290,224,50,50);
@@ -105,6 +110,22 @@ function draw() {
 	translate(width/6.65,height/1.02);
 	rotate(PI/-1.15);
 	arc(88,165,25,12,0,PI);
+
+	//fill heart
+	fill(255,0,0);
+	//heart shape
+	ellipse(25,110,diameter-110,diameter-125);
+	ellipse(15,120,diameter-125,diameter-110);
+
+
+	//fill and shading for the arms
+	fill(237,230,204);
+	translate(width/6.65,height/1.02);
+	rotate(PI/-.9);
+	arc(53.5,300,26,20,0,PI);
+	translate(width/6.65,height/1.02);
+	rotate(PI/1);
+	arc(228,35,26,20,0,PI);
 
 
 
