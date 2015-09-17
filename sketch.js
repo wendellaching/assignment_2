@@ -2,7 +2,11 @@ function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
 	noStroke();
-	noLoop();
+
+	gmainColor = color(100, 100, 200);
+	gsecondColor = color(237,230,204);
+	bmainColor = color (249,237,228);
+console.log(color);
 }
 
 function draw() {
@@ -19,7 +23,7 @@ function draw() {
 	ellipse(200,155,150,150);
 
 	//fill for ears
-	fill(237,230,204);
+	fill(gsecondColor);
 	//left ear and right ear
 	ellipse(145,120,70,50);
 	ellipse(257,120,70,50);
@@ -43,7 +47,7 @@ function draw() {
 	//fill for the face
 	fill(245,241,222);
 	// draw the face
-	var diameter = random(150, 150);
+	var diameter = (150, 150);
 	ellipse(200, 125, diameter-10, diameter);
 
 	//fill for top hair
@@ -88,7 +92,7 @@ function draw() {
 	ellipse(125,113,diameter-146, diameter-140);
 
 	//fill for nose
-	fill(237,230,204);
+	fill(gsecondColor);
 	//nose
 	rect(80,90,15,50);
 	ellipse(80,130,16,16);
@@ -111,21 +115,28 @@ function draw() {
 	rotate(PI/-1.15);
 	arc(88,165,25,12,0,PI);
 
+	var diameter = random(150, 150);
 	//fill heart
-	fill(255,0,0);
-	//heart shape
+	fill(random(255),random(255),random(255));
 	ellipse(25,110,diameter-110,diameter-125);
 	ellipse(15,120,diameter-125,diameter-110);
 
 
 	//fill and shading for the arms
-	fill(237,230,204);
+	fill(gsecondColor);
 	translate(width/6.65,height/1.02);
 	rotate(PI/-.9);
 	arc(53.5,300,26,20,0,PI);
 	translate(width/6.65,height/1.02);
 	rotate(PI/1);
 	arc(228,35,26,20,0,PI);
+
+	//starting on guy
+	//fill for the face
+	fill(bmainColor);
+	// draw the face
+	var diameter = (150, 150);
+	ellipse(-30, 275, diameter-15, diameter);
 
 
 
