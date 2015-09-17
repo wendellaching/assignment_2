@@ -175,6 +175,11 @@ function draw() {
 	rotate(PI/1.15);
 	arc(-30,55,25,12,0,PI);
 
+	//hair
+	fill(170,148,126);
+	translate(width/4, height/1.85);
+	rotate(PI/3);
+	arc(-180,180,150,100,0,PI);
 
 
 
