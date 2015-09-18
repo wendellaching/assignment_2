@@ -130,32 +130,6 @@ function draw() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-	var partMoon = random(1);
-		//draw moon background
-	if (partMoon < .25) {
-			//navy moon background
-			fill(0,51,102);
-			ellipse(-30,270,55,55);
-
-	} else {
-			//black moon background
-
-			fill(0,0,0);
-			ellipse(-30,270,55,55);
-	noStroke();
-	}
-
-
 	//yellow stars
 		var backStar = random (1.5,4);
 		if (backStar > 1) {
@@ -175,8 +149,8 @@ function draw() {
 		}
 
 	//dude dissapears
-		var dudeX = random (1);
-		if (dudeX > 0.25) {
+		var dudeX = random (3);
+		if (dudeX > 2) {
 				var dudeX;
 				dudeX = random(1);
 				fill(bsecondColor);
@@ -243,19 +217,14 @@ function draw() {
 				rect(-145,-50,40,20);
 				rect(-340,-50,40,20);
 				//guy's heart
-				var diameter = random(150, 150);
-				//fill heart
-				fill(random(0),random(0),random(255));
+				fill(0,0,0);
 				translate(width/17, height/-8);
 				rotate(PI/-10);
 				ellipse(-270,-100,diameter-135,diameter-120);
 				translate(width/17, height/-8);
 				rotate(PI/-10);
 				ellipse(-287,-160,diameter-120, diameter-135);
-				fill(254,252,215);
-				ellipse(-20,270,55,55);
-				fill(0,51,102);
-				ellipse(-30,270,55,55);
+
 
 		} else {
 
@@ -270,15 +239,15 @@ function draw() {
 				//nose
 				fill(bsecondColor);
 				ellipse(random(-125,273),random(16,16),dudeX,dudeX);
-				ellipse(-140,273,16,16);
+				ellipse(random(-140,273),random(16,16),dudeX,dudeX);
 				//nostrils
 				fill(0,0,0);
 				ellipse (random(-125,268),random(5,5), dudeX,dudeX);
-				ellipse (-140,268,5,5);
+				ellipse (random(-140,268),random(5,5),dudeX,dudeX);
 				//fill for eyes
-				fill (whiteColor);
+				fill(whiteColor);
 				ellipse (random(-95,307),random(diameter-120,diameter-115),dudeX,dudeX);
-				ellipse (-156,312,diameter-120,diameter-115);
+				ellipse (random(-156,312),random(diameter-120,diameter-115),dudeX,dudeX);
 				//pupils
 				fill(0,0,0)
 				ellipse(random(-95,300), random(diameter-135,diameter-130),dudeX,dudeX);
@@ -286,7 +255,7 @@ function draw() {
 				//iris
 				fill(whiteColor)
 				ellipse(random(-95,297),random(diameter-146,diameter-140),dudeX,dudeX);
-				ellipse(random(-156,301),random(diameter-146, diameter-140),dudeX,dudeX);
+				ellipse(random(-156,301),random(diameter-146,diameter-140),dudeX,dudeX);
 				//mouth
 				fill(140,0,3);
 				translate(width/12,height/1.25);
@@ -332,25 +301,6 @@ function draw() {
 				translate(width/17, height/-8);
 				rotate(PI/-10);
 				ellipse(random(-287,-160),random(diameter-120, diameter-135),dudeX,dudeX);
-				fill(254,252,215);
-				ellipse(random(-20,270),random(55,55),dudeX,dudeX);
-				fill(0,51,102);
-				ellipse(random(-30,270),random(55,55),dudeX,dudeX);
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
