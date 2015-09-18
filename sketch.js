@@ -2,6 +2,7 @@ function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
 	noStroke();
+	noLoop();
 
 
 	gmainColor = color(100, 100, 200);
@@ -228,8 +229,8 @@ function draw() {
 				fill(whiteColor);
 				translate(width/-20, height/10);
 				rotate(PI/-1.25);
-				textSize(250);
-				text("X",200,10);
+				textSize(300);
+				text("X",180,44);
 
 
 
