@@ -3,6 +3,7 @@ function setup() {
 	createCanvas(640, 360);
 	noStroke();
 
+
 	gmainColor = color(100, 100, 200);
 	gsecondColor = color(237,230,204);
 	bmainColor = color (249,237,228);
@@ -128,8 +129,6 @@ function draw() {
 	rotate(PI/1);
 	arc(228,35,26,20,0,PI);
 
-
-
 	//yellow stars
 		var backStar = random (1.5,4);
 		if (backStar > 1) {
@@ -225,6 +224,14 @@ function draw() {
 				rotate(PI/-10);
 				ellipse(-287,-160,diameter-120, diameter-135);
 
+				//x
+				fill(whiteColor);
+				translate(width/-20, height/10);
+				rotate(PI/-1.25);
+				textSize(250);
+				text("X",200,10);
+
+
 
 		} else {
 
@@ -301,6 +308,12 @@ function draw() {
 				translate(width/17, height/-8);
 				rotate(PI/-10);
 				ellipse(random(-287,-160),random(diameter-120, diameter-135),dudeX,dudeX);
+
+				fill(whiteColor);
+				translate(width/2,height/2);
+				rotate(PI/3.0)
+				rect(random(-26,-150),random(200,30),dudeX,dudeX);
+				rect(random(55,-175),random(30,200), dudeX, dudeX);
 
 	}
 }
