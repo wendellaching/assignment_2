@@ -4,4 +4,4 @@ http://pucd2035-e-f15.github.io/class_notes/p5_lab.html?https://raw.githubuserco
 
 ## before and after: she's still happy
 
-![shot_2](shot_1.png)
+![output_2](output_1.png)
