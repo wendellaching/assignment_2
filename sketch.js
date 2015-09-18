@@ -245,11 +245,26 @@ function draw() {
 			ellipse(-30,270,55,55);
 	noStroke();
 	}
-noLoop();
-	//stars
-	fill(255,255,0);
-	triangle(100,75,58,20,86);
 
+
+	//yellow stars
+		var backStar = random (1,5);
+		if (backStar > 0) {
+				fill(255,255,0);
+				var backStars;
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,200), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+				ellipse(random(0,640), random(0,360), backStar,backStar);
+		}
 
 
 
