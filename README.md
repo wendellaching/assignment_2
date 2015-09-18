@@ -5,4 +5,4 @@ wendellaching/assignment_2/master/sketch.js
 
 ## before and after: she's still happy
 
-![shot_1](shot_2.png)
+![shot_2](shot_1.png)
